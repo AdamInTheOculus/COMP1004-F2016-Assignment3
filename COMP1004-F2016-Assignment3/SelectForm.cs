@@ -16,5 +16,11 @@ namespace COMP1004_F2016_Assignment3
         {
             InitializeComponent();
         }
+
+        private void SelectForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Terminate application if user presses 'X' in corner
+            Application.Exit();
+        }
     }
 }
