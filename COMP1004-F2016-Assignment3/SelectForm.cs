@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace COMP1004_F2016_Assignment3
 {
-    public partial class Form1 : Form
+    public partial class SelectForm : Form
     {
-        public Form1()
+        public SelectForm()
         {
             InitializeComponent();
         }

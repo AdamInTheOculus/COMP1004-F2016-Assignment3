@@ -1,6 +1,6 @@
 ﻿namespace COMP1004_F2016_Assignment3
 {
-    partial class Form1
+    partial class SelectForm
     {
         /// <summary>
         /// Required designer variable.
