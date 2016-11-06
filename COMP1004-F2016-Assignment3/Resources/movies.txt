@@ -1,0 +1,10 @@
+Jaws, Thriller, 1.99, jaws.jpg
+The Green Hornet, Action, 2.99, greenhornet.jpg
+The Dilemma, Comedy, 1.99, thedilemma.jpg
+Death Race 2, Action, 2.99, deathrace2.jpg
+Real Steel, New Release, 4.99, realsteel.jpg
+Waiting for Forever, Drama, 1.99, waitingforever.jpg
+Gnomeo and Juliet, Family, 0.99, gnomeojuliet.jpg
+The Rite, Horror, 2.99, therite.jpg
+I am Number Four, Sci-Fi, 2.99, numberfour.jpg
+The Other Woman, Action, 2.99, theotherwoman.jpg
