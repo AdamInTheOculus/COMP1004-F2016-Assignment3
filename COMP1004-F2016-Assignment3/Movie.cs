@@ -40,6 +40,28 @@ namespace COMP1004_F2016_Assignment3
             set { this._image = value; }
         }
 
+        // CONSTRUCTOR ------------------------------------------------------------------
+        public Movie(String title, String category, double cost, Image image)
+        {
+            this.Title = title;
+            this.Category = category;
+            this.Cost = cost;
+            this.Image = image;
+        }
+
+        // Override ToString() ----------------------------------------------------------
+        override
+        public String ToString()
+        {
+            String str = "";
+
+            str += "Title: " + this.Title + "\n";
+            str += "Category: " + this.Category + "\n";
+            str += "Cost: " + getCostAsFormattedString() + "\n";
+
+            return str;
+        }
+
         // PUBLIC UTILITY METHODS -------------------------------------------------------
         /// <summary>
         /// Returns cost as a formatted string using '$'.

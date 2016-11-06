@@ -15,8 +15,17 @@ namespace COMP1004_F2016_Assignment3
         public SplashScreen()
         {
             InitializeComponent();
+
+            // Create Movie objects and store in global movie list
+            Program.movieList.GenerateMovieList();
         }
 
+        /// <summary>
+        /// When the timer "ticks" 3 seconds have passed.
+        /// Create new form and hide this splash screen.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashScreenTimer_Tick(object sender, EventArgs e)
         {
             // Create instance of next form to load

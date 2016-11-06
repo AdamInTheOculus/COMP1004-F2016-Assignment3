@@ -8,6 +8,8 @@ namespace COMP1004_F2016_Assignment3
 {
     static class Program
     {
+        public static MovieList movieList = new MovieList();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
