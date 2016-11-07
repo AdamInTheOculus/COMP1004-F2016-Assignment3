@@ -50,6 +50,15 @@ namespace COMP1004_F2016_Assignment3
             UpdateCostTextFields();
         }
 
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = (MessageBox.Show("Are you sure you want to cancel and exit?", "Cancel & Exit?", MessageBoxButtons.YesNo));
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
         // PRIVATE UTILITY METHODS ------------------------------------------------------
         /// <summary>
         /// Performs math calculations and converts to String. Fills in OrderForm 'Your Order' text boxes.
@@ -76,13 +85,13 @@ namespace COMP1004_F2016_Assignment3
             GrandTotalTextBox.Text = grandTotal.ToString("C2");
         }
 
-        private void CancelButton_Click(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = (MessageBox.Show("Are you sure you want to cancel and exit?", "Cancel & Exit?", MessageBoxButtons.YesNo));
-            if(result == System.Windows.Forms.DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            String about = "";
+            about += "Title:\tMovie Bananza Selection v1.4\n";
+            about += "By:\tAdam Sinclair - ID#200321984 - adamsinclair.ca \n";
+            about += "Contact:\t705-123-4567";
+            MessageBox.Show(about, "About Us", MessageBoxButtons.OK);
         }
     }
 }
