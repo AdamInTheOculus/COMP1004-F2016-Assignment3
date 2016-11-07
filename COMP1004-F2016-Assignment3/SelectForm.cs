@@ -32,7 +32,16 @@ namespace COMP1004_F2016_Assignment3
             }
 
             // If movie is selected, auto select the movie
-            AvailableMoviesListBox.SelectedItem = Program.movieList.CurrentMovie.Title;
+            if(AvailableMoviesListBox.SelectedItem != null)
+            {
+                AvailableMoviesListBox.SelectedItem = Program.movieList.CurrentMovie.Title;
+                NextButton.Enabled = true;
+            }
+            else
+            {
+                NextButton.Enabled = false;
+            }
+            
         }
 
         private void AvailableMoviesListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -45,6 +54,9 @@ namespace COMP1004_F2016_Assignment3
             TitleTextBox.Text = Program.movieList.CurrentMovie.Title;
             CategoryTextBox.Text = Program.movieList.CurrentMovie.Category;
             CostTextBox.Text = Program.movieList.CurrentMovie.GetCostAsFormattedString();
+
+            // Enable next button
+            NextButton.Enabled = true;
         }
 
         private void NextButton_Click(object sender, EventArgs e)

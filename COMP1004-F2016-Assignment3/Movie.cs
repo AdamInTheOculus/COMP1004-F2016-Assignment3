@@ -55,9 +55,9 @@ namespace COMP1004_F2016_Assignment3
         {
             String str = "";
 
-            str += "Title: " + this.Title + "\n";
-            str += "Category: " + this.Category + "\n";
-            str += "Cost: " + GetCostAsFormattedString() + "\n";
+            str += "\tTitle: " + this.Title + "\n";
+            str += "\tCategory: " + this.Category + "\n";
+            str += "\tCost: " + GetCostAsFormattedString() + "\n";
 
             return str;
         }
