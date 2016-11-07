@@ -30,7 +30,11 @@
         {
             this.OrderMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.streamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MovieSelectedGroupBox = new System.Windows.Forms.GroupBox();
             this.MovieSelectedPictureBox = new System.Windows.Forms.PictureBox();
             this.CategoryTextBox = new System.Windows.Forms.TextBox();
@@ -38,6 +42,7 @@
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.YourOrderGroupBox = new System.Windows.Forms.GroupBox();
+            this.DVDCheckBox = new System.Windows.Forms.CheckBox();
             this.GrandTotalTextBox = new System.Windows.Forms.TextBox();
             this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
             this.SubtotalTextBox = new System.Windows.Forms.TextBox();
@@ -50,11 +55,6 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.streamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DVDCheckBox = new System.Windows.Forms.CheckBox();
             this.OrderMenuStrip.SuspendLayout();
             this.MovieSelectedGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MovieSelectedPictureBox)).BeginInit();
@@ -82,6 +82,25 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            // 
+            // streamToolStripMenuItem
+            // 
+            this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
+            this.streamToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.streamToolStripMenuItem.Text = "Strea&m";
+            // 
+            // cancelToolStripMenuItem
+            // 
+            this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.cancelToolStripMenuItem.Text = "Canc&el";
+            this.cancelToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -89,6 +108,13 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // MovieSelectedGroupBox
             // 
@@ -165,6 +191,17 @@
             this.YourOrderGroupBox.TabIndex = 2;
             this.YourOrderGroupBox.TabStop = false;
             this.YourOrderGroupBox.Text = "Your Order";
+            // 
+            // DVDCheckBox
+            // 
+            this.DVDCheckBox.AutoSize = true;
+            this.DVDCheckBox.Location = new System.Drawing.Point(14, 133);
+            this.DVDCheckBox.Name = "DVDCheckBox";
+            this.DVDCheckBox.Size = new System.Drawing.Size(149, 17);
+            this.DVDCheckBox.TabIndex = 10;
+            this.DVDCheckBox.Text = "Order DVD for extra $9.99";
+            this.DVDCheckBox.UseVisualStyleBackColor = true;
+            this.DVDCheckBox.CheckedChanged += new System.EventHandler(this.DVDCheckBox_CheckedChanged);
             // 
             // GrandTotalTextBox
             // 
@@ -270,43 +307,7 @@
             this.StreamButton.TabIndex = 5;
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
-            // streamToolStripMenuItem
-            // 
-            this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
-            this.streamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.streamToolStripMenuItem.Text = "Strea&m";
-            // 
-            // cancelToolStripMenuItem
-            // 
-            this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cancelToolStripMenuItem.Text = "Canc&el";
-            this.cancelToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "&About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // DVDCheckBox
-            // 
-            this.DVDCheckBox.AutoSize = true;
-            this.DVDCheckBox.Location = new System.Drawing.Point(14, 133);
-            this.DVDCheckBox.Name = "DVDCheckBox";
-            this.DVDCheckBox.Size = new System.Drawing.Size(149, 17);
-            this.DVDCheckBox.TabIndex = 10;
-            this.DVDCheckBox.Text = "Order DVD for extra $9.99";
-            this.DVDCheckBox.UseVisualStyleBackColor = true;
-            this.DVDCheckBox.CheckedChanged += new System.EventHandler(this.DVDCheckBox_CheckedChanged);
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // OrderForm
             // 

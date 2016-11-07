@@ -13,6 +13,9 @@ namespace COMP1004_F2016_Assignment3
     public partial class OrderForm : Form
     {
 
+        // Perform financial math operations
+        private double subtotal = 0f, taxTotal = 0f, grandTotal = 0f;
+
         public OrderForm()
         {
             InitializeComponent();
@@ -65,9 +68,6 @@ namespace COMP1004_F2016_Assignment3
         /// </summary>
         private void UpdateCostTextFields()
         {
-            // Perform financial math operations
-            double subtotal = 0f, taxTotal = 0f, grandTotal = 0f;
-
             // User selected DVD option
             if (DVDCheckBox.Checked)
             {
@@ -92,6 +92,16 @@ namespace COMP1004_F2016_Assignment3
             about += "By:\tAdam Sinclair - ID#200321984 - adamsinclair.ca \n";
             about += "Contact:\t705-123-4567";
             MessageBox.Show(about, "About Us", MessageBoxButtons.OK);
+        }
+
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            // Show new form
+            StreamForm newStreamForm = new StreamForm(grandTotal);
+            newStreamForm.Show();
+
+            // Hide current form
+            this.Hide();
         }
     }
 }
