@@ -12,11 +12,18 @@ namespace COMP1004_F2016_Assignment3
     {
         // PRIVATE INSTANCE VARIABLES ---------------------------------------------------
         private List<Movie> _movies;
+        private Movie _currentMovie;
 
         // PUBLIC PROPERTIES ------------------------------------------------------------
         public List<Movie> Movies
         {
             get { return _movies; }
+        }
+
+        public Movie CurrentMovie
+        {
+            get { return this._currentMovie; }
+            set { this._currentMovie = value; }
         }
 
         // CONSTRUCTOR ------------------------------------------------------------------
@@ -70,6 +77,26 @@ namespace COMP1004_F2016_Assignment3
             {
                 Console.WriteLine(" -- CRITICAL ERROR -- " + e.Message);
             }
+        }
+
+        /// <summary>
+        /// Returns movie object if title is matched with movie in list.
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public Movie GetMovieByTitle(String title)
+        {
+            foreach(Movie movie in Movies)
+            {
+                // Match found. Return actual movie.
+                if(movie.Title.Equals(title))
+                {
+                    return movie;
+                }
+            }
+
+            // Return null when no movies are found.
+            return null;
         }
 
         // PRIVATE UTILITY METHODS ------------------------------------------------------

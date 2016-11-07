@@ -57,7 +57,7 @@ namespace COMP1004_F2016_Assignment3
 
             str += "Title: " + this.Title + "\n";
             str += "Category: " + this.Category + "\n";
-            str += "Cost: " + getCostAsFormattedString() + "\n";
+            str += "Cost: " + GetCostAsFormattedString() + "\n";
 
             return str;
         }
@@ -66,7 +66,7 @@ namespace COMP1004_F2016_Assignment3
         /// <summary>
         /// Returns cost as a formatted string using '$'.
         /// </summary>
-        public String getCostAsFormattedString()
+        public String GetCostAsFormattedString()
         {
             return this._cost.ToString("C2");
         }

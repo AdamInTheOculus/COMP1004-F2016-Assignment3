@@ -62,6 +62,7 @@
             this.AvailableMoviesListBox.Size = new System.Drawing.Size(120, 186);
             this.AvailableMoviesListBox.Sorted = true;
             this.AvailableMoviesListBox.TabIndex = 1;
+            this.AvailableMoviesListBox.SelectedIndexChanged += new System.EventHandler(this.AvailableMoviesListBox_SelectedIndexChanged);
             // 
             // CurrentMovieLabel
             // 
@@ -94,6 +95,7 @@
             // 
             this.CostTextBox.Location = new System.Drawing.Point(226, 115);
             this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(46, 21);
             this.CostTextBox.TabIndex = 6;
             // 
@@ -101,6 +103,7 @@
             // 
             this.CategoryTextBox.Location = new System.Drawing.Point(116, 115);
             this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(90, 21);
             this.CategoryTextBox.TabIndex = 5;
             // 
@@ -108,6 +111,7 @@
             // 
             this.TitleTextBox.Location = new System.Drawing.Point(116, 40);
             this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(136, 21);
             this.TitleTextBox.TabIndex = 4;
             // 
@@ -143,6 +147,7 @@
             this.SelectionPictureBox.Location = new System.Drawing.Point(7, 20);
             this.SelectionPictureBox.Name = "SelectionPictureBox";
             this.SelectionPictureBox.Size = new System.Drawing.Size(100, 120);
+            this.SelectionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SelectionPictureBox.TabIndex = 0;
             this.SelectionPictureBox.TabStop = false;
             // 
@@ -169,6 +174,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banana-Rama-Woah-Bama Movie Streaming Service";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectForm_FormClosing);
+            this.Load += new System.EventHandler(this.SelectForm_Load);
             this.SelectionGroupBox.ResumeLayout(false);
             this.SelectionGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).EndInit();
