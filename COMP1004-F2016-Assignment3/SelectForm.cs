@@ -43,5 +43,18 @@ namespace COMP1004_F2016_Assignment3
             CategoryTextBox.Text = Program.movieList.CurrentMovie.Category;
             CostTextBox.Text = Program.movieList.CurrentMovie.GetCostAsFormattedString();
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            // Ensure movie is selected before moving on.
+            if(Program.movieList.CurrentMovie != null)
+            {
+                Console.WriteLine("Movie is selected!");
+            }
+            else
+            {
+                MessageBox.Show("Please select a movie first before continuing.", "No Movie Selected", MessageBoxButtons.OK);
+            }
+        }
     }
 }
