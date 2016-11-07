@@ -191,7 +191,7 @@
             this.YourOrderGroupBox.Controls.Add(this.CostLabel);
             this.YourOrderGroupBox.Location = new System.Drawing.Point(251, 39);
             this.YourOrderGroupBox.Name = "YourOrderGroupBox";
-            this.YourOrderGroupBox.Size = new System.Drawing.Size(184, 156);
+            this.YourOrderGroupBox.Size = new System.Drawing.Size(184, 174);
             this.YourOrderGroupBox.TabIndex = 2;
             this.YourOrderGroupBox.TabStop = false;
             this.YourOrderGroupBox.Text = "Your Order";
@@ -199,7 +199,7 @@
             // DVDCheckBox
             // 
             this.DVDCheckBox.AutoSize = true;
-            this.DVDCheckBox.Location = new System.Drawing.Point(14, 133);
+            this.DVDCheckBox.Location = new System.Drawing.Point(14, 150);
             this.DVDCheckBox.Name = "DVDCheckBox";
             this.DVDCheckBox.Size = new System.Drawing.Size(149, 17);
             this.DVDCheckBox.TabIndex = 10;
@@ -209,7 +209,7 @@
             // 
             // GrandTotalTextBox
             // 
-            this.GrandTotalTextBox.Location = new System.Drawing.Point(94, 96);
+            this.GrandTotalTextBox.Location = new System.Drawing.Point(94, 114);
             this.GrandTotalTextBox.Name = "GrandTotalTextBox";
             this.GrandTotalTextBox.ReadOnly = true;
             this.GrandTotalTextBox.Size = new System.Drawing.Size(47, 20);
@@ -217,7 +217,7 @@
             // 
             // SalesTaxTextBox
             // 
-            this.SalesTaxTextBox.Location = new System.Drawing.Point(94, 71);
+            this.SalesTaxTextBox.Location = new System.Drawing.Point(94, 89);
             this.SalesTaxTextBox.Name = "SalesTaxTextBox";
             this.SalesTaxTextBox.ReadOnly = true;
             this.SalesTaxTextBox.Size = new System.Drawing.Size(47, 20);
@@ -225,7 +225,7 @@
             // 
             // SubtotalTextBox
             // 
-            this.SubtotalTextBox.Location = new System.Drawing.Point(94, 46);
+            this.SubtotalTextBox.Location = new System.Drawing.Point(94, 64);
             this.SubtotalTextBox.Name = "SubtotalTextBox";
             this.SubtotalTextBox.ReadOnly = true;
             this.SubtotalTextBox.Size = new System.Drawing.Size(47, 20);
@@ -250,7 +250,7 @@
             // SubtotalLabel
             // 
             this.SubtotalLabel.AutoSize = true;
-            this.SubtotalLabel.Location = new System.Drawing.Point(43, 48);
+            this.SubtotalLabel.Location = new System.Drawing.Point(43, 66);
             this.SubtotalLabel.Name = "SubtotalLabel";
             this.SubtotalLabel.Size = new System.Drawing.Size(49, 13);
             this.SubtotalLabel.TabIndex = 5;
@@ -259,7 +259,7 @@
             // SalesTaxLabel
             // 
             this.SalesTaxLabel.AutoSize = true;
-            this.SalesTaxLabel.Location = new System.Drawing.Point(6, 73);
+            this.SalesTaxLabel.Location = new System.Drawing.Point(6, 91);
             this.SalesTaxLabel.Name = "SalesTaxLabel";
             this.SalesTaxLabel.Size = new System.Drawing.Size(86, 13);
             this.SalesTaxLabel.TabIndex = 4;
@@ -268,7 +268,7 @@
             // GrandTotalLabel
             // 
             this.GrandTotalLabel.AutoSize = true;
-            this.GrandTotalLabel.Location = new System.Drawing.Point(29, 100);
+            this.GrandTotalLabel.Location = new System.Drawing.Point(29, 118);
             this.GrandTotalLabel.Name = "GrandTotalLabel";
             this.GrandTotalLabel.Size = new System.Drawing.Size(66, 13);
             this.GrandTotalLabel.TabIndex = 3;

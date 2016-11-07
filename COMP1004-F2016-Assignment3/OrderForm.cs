@@ -77,7 +77,7 @@ namespace COMP1004_F2016_Assignment3
             // Build information string and present in a MessageBox
             String about = "";
             about += "Title:\tMovie Bananza Selection\n";
-            about += "Version: 1.4\n";
+            about += "Version:\t1.4\n";
             about += "By:\tAdam Sinclair - moviebonanza.ca \n";
             about += "Contact:\t705-123-4567";
             MessageBox.Show(about, "About Us", MessageBoxButtons.OK);
@@ -92,7 +92,7 @@ namespace COMP1004_F2016_Assignment3
             // Set our size, location, and name.
             PrintPreviewDialog printDialog = new PrintPreviewDialog();
             printDialog.ClientSize = new Size(400, 500);
-            printDialog.DesktopLocation = new Point(100, 100);
+            printDialog.DesktopLocation = new Point(0, 0);
             printDialog.Name = "Print Preview - OrderForm";
 
             // Associate custom print event with PrintPageHandler
@@ -131,7 +131,11 @@ namespace COMP1004_F2016_Assignment3
             // User selected DVD option so we add 9.99
             if (DVDCheckBox.Checked)
             {
-                subtotal += 9.99f;
+                subtotal = 9.99f;
+            }
+            else
+            {
+                subtotal = 0;
             }
 
             // Cost calculations
@@ -153,10 +157,16 @@ namespace COMP1004_F2016_Assignment3
             String str = "";
 
             // Title and date
-            str += "OrderForm Print Preview @ " + DateTime.Today.ToString() + "\n\n";
+            str += "OrderForm Print Preview @ " + DateTime.Today.ToString() + "\n";
+
+            // Optional DVD message
+            if(DVDCheckBox.Checked)
+            {
+                str += "* DVD purchased for an extra $9.99!\n";
+            }
 
             // 'Movie Selected'
-            str += "Movie Selected:\n";
+            str += "\nMovie Selected:\n";
             str += Program.movieList.CurrentMovie.ToString() + "\n";
 
             // 'Your Order'
