@@ -30,6 +30,9 @@ namespace COMP1004_F2016_Assignment3
             {
                 AvailableMoviesListBox.Items.Add(movie.Title);
             }
+
+            // If movie is selected, auto select the movie
+            AvailableMoviesListBox.SelectedItem = Program.movieList.CurrentMovie.Title;
         }
 
         private void AvailableMoviesListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,7 +52,10 @@ namespace COMP1004_F2016_Assignment3
             // Ensure movie is selected before moving on.
             if(Program.movieList.CurrentMovie != null)
             {
-                Console.WriteLine("Movie is selected!");
+                // Load up next form and hide this one.
+                OrderForm nextForm = new OrderForm();
+                nextForm.Show();
+                this.Hide();
             }
             else
             {
