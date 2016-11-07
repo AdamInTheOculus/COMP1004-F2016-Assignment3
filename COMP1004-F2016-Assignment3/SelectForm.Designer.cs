@@ -171,7 +171,11 @@
             this.Controls.Add(this.CurrentMovieLabel);
             this.Controls.Add(this.AvailableMoviesListBox);
             this.Controls.Add(this.BoldInstructionLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SelectForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banana-Rama-Woah-Bama Movie Streaming Service";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectForm_FormClosing);
