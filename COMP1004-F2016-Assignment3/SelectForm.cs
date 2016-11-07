@@ -49,7 +49,7 @@ namespace COMP1004_F2016_Assignment3
             }
 
             // If movie is selected, auto select the movie
-            if(AvailableMoviesListBox.SelectedItem != null)
+            if(Program.movieList.CurrentMovie != null)
             {
                 AvailableMoviesListBox.SelectedItem = Program.movieList.CurrentMovie.Title;
                 NextButton.Enabled = true;

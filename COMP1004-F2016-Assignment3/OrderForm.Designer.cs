@@ -87,21 +87,21 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // streamToolStripMenuItem
             // 
             this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
-            this.streamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.streamToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.streamToolStripMenuItem.Text = "Strea&m";
             this.streamToolStripMenuItem.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.cancelToolStripMenuItem.Text = "Canc&el";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
             // 
@@ -116,7 +116,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -127,25 +127,25 @@
             this.MovieSelectedGroupBox.Controls.Add(this.TitleTextBox);
             this.MovieSelectedGroupBox.Controls.Add(this.CategoryLabel);
             this.MovieSelectedGroupBox.Controls.Add(this.TitleLabel);
-            this.MovieSelectedGroupBox.Location = new System.Drawing.Point(12, 39);
+            this.MovieSelectedGroupBox.Location = new System.Drawing.Point(12, 27);
             this.MovieSelectedGroupBox.Name = "MovieSelectedGroupBox";
-            this.MovieSelectedGroupBox.Size = new System.Drawing.Size(168, 260);
+            this.MovieSelectedGroupBox.Size = new System.Drawing.Size(218, 272);
             this.MovieSelectedGroupBox.TabIndex = 1;
             this.MovieSelectedGroupBox.TabStop = false;
             this.MovieSelectedGroupBox.Text = "Movie Selected";
             // 
             // MovieSelectedPictureBox
             // 
-            this.MovieSelectedPictureBox.Location = new System.Drawing.Point(9, 119);
+            this.MovieSelectedPictureBox.Location = new System.Drawing.Point(9, 101);
             this.MovieSelectedPictureBox.Name = "MovieSelectedPictureBox";
-            this.MovieSelectedPictureBox.Size = new System.Drawing.Size(142, 135);
+            this.MovieSelectedPictureBox.Size = new System.Drawing.Size(203, 165);
             this.MovieSelectedPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MovieSelectedPictureBox.TabIndex = 4;
             this.MovieSelectedPictureBox.TabStop = false;
             // 
             // CategoryTextBox
             // 
-            this.CategoryTextBox.Location = new System.Drawing.Point(9, 82);
+            this.CategoryTextBox.Location = new System.Drawing.Point(10, 75);
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(142, 20);
@@ -162,7 +162,7 @@
             // CategoryLabel
             // 
             this.CategoryLabel.AutoSize = true;
-            this.CategoryLabel.Location = new System.Drawing.Point(6, 66);
+            this.CategoryLabel.Location = new System.Drawing.Point(6, 59);
             this.CategoryLabel.Name = "CategoryLabel";
             this.CategoryLabel.Size = new System.Drawing.Size(49, 13);
             this.CategoryLabel.TabIndex = 1;
@@ -189,7 +189,7 @@
             this.YourOrderGroupBox.Controls.Add(this.SalesTaxLabel);
             this.YourOrderGroupBox.Controls.Add(this.GrandTotalLabel);
             this.YourOrderGroupBox.Controls.Add(this.CostLabel);
-            this.YourOrderGroupBox.Location = new System.Drawing.Point(210, 39);
+            this.YourOrderGroupBox.Location = new System.Drawing.Point(251, 39);
             this.YourOrderGroupBox.Name = "YourOrderGroupBox";
             this.YourOrderGroupBox.Size = new System.Drawing.Size(184, 156);
             this.YourOrderGroupBox.TabIndex = 2;
@@ -285,7 +285,7 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(210, 275);
+            this.BackButton.Location = new System.Drawing.Point(236, 276);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(62, 23);
             this.BackButton.TabIndex = 3;
