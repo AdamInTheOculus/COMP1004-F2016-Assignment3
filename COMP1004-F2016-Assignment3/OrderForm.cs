@@ -52,7 +52,7 @@ namespace COMP1004_F2016_Assignment3
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = (MessageBox.Show("Are you sure you want to cancel and exit?", "Cancel & Exit?", MessageBoxButtons.YesNo));
+            DialogResult result = (MessageBox.Show("Are you sure you want to cancel and exit?", "Cancel and Exit?", MessageBoxButtons.YesNo));
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 Application.Exit();

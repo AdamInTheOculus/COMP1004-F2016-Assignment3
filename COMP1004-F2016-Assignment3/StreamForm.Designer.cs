@@ -39,10 +39,11 @@
             // ThankYouLabel
             // 
             this.ThankYouLabel.AutoSize = true;
-            this.ThankYouLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThankYouLabel.Location = new System.Drawing.Point(12, 33);
+            this.ThankYouLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThankYouLabel.ForeColor = System.Drawing.Color.Lime;
+            this.ThankYouLabel.Location = new System.Drawing.Point(34, 9);
             this.ThankYouLabel.Name = "ThankYouLabel";
-            this.ThankYouLabel.Size = new System.Drawing.Size(394, 20);
+            this.ThankYouLabel.Size = new System.Drawing.Size(352, 20);
             this.ThankYouLabel.TabIndex = 0;
             this.ThankYouLabel.Text = "Thank you for choosing Movie Banana-Nanza!";
             // 
@@ -50,7 +51,8 @@
             // 
             this.PlayMessageLabel.AutoSize = true;
             this.PlayMessageLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayMessageLabel.Location = new System.Drawing.Point(187, 152);
+            this.PlayMessageLabel.ForeColor = System.Drawing.Color.White;
+            this.PlayMessageLabel.Location = new System.Drawing.Point(175, 81);
             this.PlayMessageLabel.Name = "PlayMessageLabel";
             this.PlayMessageLabel.Size = new System.Drawing.Size(219, 20);
             this.PlayMessageLabel.TabIndex = 1;
@@ -60,7 +62,7 @@
             // 
             this.MovieTitleLabel.AutoSize = true;
             this.MovieTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MovieTitleLabel.Location = new System.Drawing.Point(23, 152);
+            this.MovieTitleLabel.Location = new System.Drawing.Point(34, 78);
             this.MovieTitleLabel.Name = "MovieTitleLabel";
             this.MovieTitleLabel.Size = new System.Drawing.Size(138, 24);
             this.MovieTitleLabel.TabIndex = 2;
@@ -69,8 +71,9 @@
             // CostLabel
             // 
             this.CostLabel.AutoSize = true;
+            this.CostLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CostLabel.Location = new System.Drawing.Point(283, 88);
+            this.CostLabel.Location = new System.Drawing.Point(276, 44);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(100, 20);
             this.CostLabel.TabIndex = 3;
@@ -79,8 +82,9 @@
             // CreditCardLabel
             // 
             this.CreditCardLabel.AutoSize = true;
-            this.CreditCardLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreditCardLabel.Location = new System.Drawing.Point(23, 88);
+            this.CreditCardLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreditCardLabel.ForeColor = System.Drawing.Color.Linen;
+            this.CreditCardLabel.Location = new System.Drawing.Point(34, 44);
             this.CreditCardLabel.Name = "CreditCardLabel";
             this.CreditCardLabel.Size = new System.Drawing.Size(245, 20);
             this.CreditCardLabel.TabIndex = 4;
@@ -88,7 +92,7 @@
             // 
             // OKButton
             // 
-            this.OKButton.Location = new System.Drawing.Point(155, 200);
+            this.OKButton.Location = new System.Drawing.Point(163, 121);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 23);
             this.OKButton.TabIndex = 5;
@@ -99,7 +103,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 235);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(419, 157);
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.CreditCardLabel);
             this.Controls.Add(this.CostLabel);
@@ -107,6 +112,7 @@
             this.Controls.Add(this.PlayMessageLabel);
             this.Controls.Add(this.ThankYouLabel);
             this.Name = "StreamForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your movie is about to start!";
             this.ResumeLayout(false);
             this.PerformLayout();
