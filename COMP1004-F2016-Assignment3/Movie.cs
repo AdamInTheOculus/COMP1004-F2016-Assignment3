@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * App Name: Movie Bonanza Selector
+ * App Description: This app allows users to select from a list of movies, and stream them.
+ *                  There is also an option to purchase a DVD for an extra $9.99.
+ *                  
+ * Creation Date: October 29th 2016
+ * Author's Name: Adam Sinclair
+ * Student ID #: 200321984
+ * */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

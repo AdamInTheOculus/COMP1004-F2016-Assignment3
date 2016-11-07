@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * App Name: Movie Bonanza Selector
+ * App Description: This app allows users to select from a list of movies, and stream them.
+ *                  There is also an option to purchase a DVD for an extra $9.99.
+ *                  
+ * Creation Date: October 29th 2016
+ * Author's Name: Adam Sinclair
+ * Student ID #: 200321984
+ * */
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -86,6 +96,7 @@ namespace COMP1004_F2016_Assignment3
         /// <returns></returns>
         public Movie GetMovieByTitle(String title)
         {
+            // Iterate through each Movie until a match is found.
             foreach(Movie movie in Movies)
             {
                 // Match found. Return actual movie.
